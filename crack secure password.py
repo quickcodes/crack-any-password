@@ -110,21 +110,24 @@ if __name__ == '__main__':
         6. Crazy
         ''')
 
-        num = int(input("    --> "))
-        if num == 1:
-            lowerCase()
-        elif num == 2:
-            upperCase()
-        elif num == 3:
-            digits()
-        elif num == 4:
-            mixword()
-        elif num == 5:
-            wordsDigits()
-        elif num == 6:
-            fuckingCrazy()
-        else:
-            print("\n       < Please enter valid number >")
+        try:
+            num = int(input("    --> "))
+            if num == 1:
+                lowerCase()
+            elif num == 2:
+                upperCase()
+            elif num == 3:
+                digits()
+            elif num == 4:
+                mixword()
+            elif num == 5:
+                wordsDigits()
+            elif num == 6:
+                fuckingCrazy()
+            else:
+                print("\n       < Please enter valid number >")
+        except:
+            print("       Ulta sidha mat type kar...")
 
         print("\n       Press any key to play again and 'q' for exit")
         end = input("    --> ")
